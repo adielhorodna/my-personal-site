@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
+import { Box, Heading, Text, Link, Flex } from '@chakra-ui/react';
+
+
 
 
 
 
 function Projects () {
-    
+
     return (
         <section class="projects" id="projects">
  
@@ -58,6 +61,7 @@ function Projects () {
 </ul>
       </p>
       <a href="#" target="_blank" class="project-link">Check it Out</a>
+
     </div>
   </div>
 </section>

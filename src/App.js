@@ -10,8 +10,17 @@ import Projects from './Projects';
 import Blog from './Blog';
 import Bottom from './Bottom';
 
+
+// 1. import `ChakraProvider` component
+import { ChakraProvider } from '@chakra-ui/react'
+import { Box, Link } from "@chakra-ui/react";
+
+
 function App() {
+  
   return (
+    <ChakraProvider>
+      <Box >
     <div className="App">
 
  <div className="nav-bar">
@@ -21,13 +30,48 @@ function App() {
 <nav>
   <ul>
     <li>
-      <NavLink to="/projects"> Projects </NavLink>
+      <Link
+      // to="/projects" Projects 
+      fontSize="9xl"  
+          fontWeight="bold"  
+          display="inline-block"  
+          _hover={{ color: "#B6D2B2" }}  
+          mr="2"
+          >
+             <a href="/projects">PROJECTS</a>
+</Link>
+          {/* </NavLink> */}
+    </li>
+
+
+    <li>
+      {/* <NavLink to="/about"> About </NavLink>*/}
+      <Link
+          fontSize="9xl"
+          fontWeight="bold"
+          display="inline-block"
+          _hover={{ color: "#B6D2B2" }}
+          mr="2"
+        >
+          <a href="/about">ABOUT</a>
+        </Link>
+
+
     </li>
     <li>
-      <NavLink to="/about"> About </NavLink>
-    </li>
-    <li>
-      <NavLink to="/blog"> Blog </NavLink>
+      {/* <NavLink to="/blog"> Blog </NavLink> */}
+
+      <Link
+          fontSize="9xl"
+          fontWeight="bold"
+          display="inline-block"
+          _hover={{ color: "#B6D2B2" }}
+          mr="2"
+        >
+          <a href="/blog">BLOG</a>
+        </Link>
+
+
     </li>
   </ul>
 </nav>
@@ -58,9 +102,14 @@ function App() {
         {/* </Routes> */}
       </Switch>
       {/* </Router> */}
+      <Bottom/>
     </div>
+    </Box>
+    </ChakraProvider>
+  
   );
 }
+
 export default App;
 
 

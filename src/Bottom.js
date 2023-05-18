@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
+import { Box, Link, Text, HStack } from '@chakra-ui/react';
 
 
 
 
-function Bottom() {
-  return ( 
+
+
+
+function Bottom (){
+  return(
+
 <footer>
-{/* <!-- Footer section --> */}
 <div class="footer-title"></div>
 <p>SOFTWARE DEVELOPER</p>
 
@@ -29,6 +33,7 @@ function Bottom() {
 
   <p> adiel.eich@gmail.com </p>
   </footer>
-  )}
+  )
+}
 
   export default Bottom 

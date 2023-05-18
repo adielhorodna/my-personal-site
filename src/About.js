@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
-
+// import myImage from './Adiel-Headshot-DSC04502-Edit.png';
 
 function About () {
-    
+
     return (
         <section class="about" id="about">
+            <img src = "/Adiel-Headshot-DSC04502-Edit.png" alt = "profile photo"></img>
         <img
           src="assets/images/wfh_1.svg"
           alt="adiel-photo"
