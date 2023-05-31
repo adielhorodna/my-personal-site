@@ -22,14 +22,6 @@ function Bottom (){
   <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@adiel.eich">Medium </a>
   <a target="_blank" rel="noopener noreferrer" href="https://github.com/adielhorodna/">GitHub </a>
   </div>
-{/* 
-  <a href="#"
-    ><img
-      src="assets/icons/icons8-linkedin-circled.gif"
-      alt="Linkedin"
-      loading="lazy"
-      class="socicon"
-  /></a> */}
 
   <p> adiel.eich@gmail.com </p>
   </footer>
