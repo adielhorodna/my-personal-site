@@ -14,13 +14,15 @@ import Bottom from './Bottom';
 // 1. import `ChakraProvider` component
 import { ChakraProvider } from '@chakra-ui/react'
 import { Box, Link } from "@chakra-ui/react";
+import HiddenFooter from './Bottom';
 
 
 function App() {
   
   return (
     <ChakraProvider>
-      <Box >
+      <Box backgroundColor="white" marginBottom="400px"  >
+      {/* zIndex="2"> */}
     <div className="App">
 
  <div className="nav-bar">
@@ -102,7 +104,7 @@ function App() {
         {/* </Routes> */}
       </Switch>
       {/* </Router> */}
-      <Bottom/>
+      <HiddenFooter/>
     </div>
     </Box>
     </ChakraProvider>

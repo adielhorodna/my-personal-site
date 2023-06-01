@@ -8,6 +8,7 @@ import { Box, Text, Image, VStack } from '@chakra-ui/react';
 
 function About() {
   return (
+
     <Box id="about" textAlign="center" maxW="500px" mx="auto">
       <Text as="h1" fontWeight="bold" fontSize="8xl" textAlign="left" mb={4}>
         HI
@@ -38,6 +39,7 @@ function About() {
         m1="auto"
       />
       </Box>
+  
   );
 }
 
